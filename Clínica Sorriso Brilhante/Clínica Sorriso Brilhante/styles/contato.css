@@ -1,0 +1,154 @@
+body{
+	background: linear-gradient(#ffffff,#93aad3);
+}
+
+header{
+	padding: 20px 0;
+}
+
+
+.caixa{
+	position: relative;
+	width: 1400px;
+	margin: 0 -50px;
+	margin-bottom: -100px;
+
+}
+
+.Ir_pagina_inicial{
+	width:40%;
+	padding: 20px 20px;
+	background: rgb(47, 44, 227);
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 30px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.Ir_pagina_inicial:hover {
+	background: rgb(97, 164, 231);
+	transform: scale(1.2);
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-transform: uppercase;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000000;
+	font-size: 22px;
+}
+
+nav a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+main {
+	width: 940px;
+	margin: 0 auto;
+}
+
+form{
+	margin: 40px 0;
+}
+
+form label, form legend{
+	display: block;
+	margin: 0 0 10px;
+	font-size: 20px0;
+}
+
+.input-padrao{
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.espaçamento{
+	padding-top: 30px;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 20px;
+	font-weight: bold;
+	font-size: 18px;
+	background: rgb(47, 44, 227);
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+}
+
+.enviar:hover {
+	background: rgb(97, 164, 231);
+	transform: scale(1.2);
+}
+
+table {
+	margin: 20px 0 40px;
+}
+
+.tabela{
+	width: 940px;
+	margin: 0 auto;
+}
+
+thead {
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+}
+
+th {
+	background: rgb(47, 44, 227);
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+td {
+	background: #ffffff;
+	padding: 8px 15px;
+}
+
+
+footer {
+	text-align: center;
+	padding: 40px 0;
+}
+.imagem-logo{
+	padding-right: 120px;
+	padding-top: 10px;
+	margin-top: 50px;
+}
+
+.copyright {
+	color: #000000;
+	font-size: 13px;
+	margin: -50px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+	.caixa,main,{
+		width: 100%;
+	}
+	.input-padrao{
+		width: 100%;
+	}
+}
