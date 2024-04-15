@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width">
-		<title>Clínica Sorriso Brilhante!</title>
+		<title>Clínica Sorriso Brilhante</title>
 
 		<link rel= "stylesheet" href="./styles/style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,22 +12,21 @@
 	</head>
 
 	<body>
-	<div class="background-principal">
+	<div class="background-principal"> <!-- Essa div foi criada para coloração de fundo da pagina inteira -->
 		<header>
-			<div class="caixa">
+			<div class="caixa"> <!-- Essa div é a caixa que armazena o logito e o botão -->
 				<h1><img src="./img/logo_Sorriso_Brilhante - Copia.png"></h1>
-
-				<nav>
+				<nav> <!-- Essa tag representa o botâo que leva para a outra pagina de agendar consulta -->
 					<ul>
-						<li><a href="contato.html" class="enviar">Agendar sua consulta</a></li>
+						<li><a href="agendamento.html" class="botaoAgendar">Agendar sua consulta</a></li>
 					</ul>
 				</nav>
 			</div>
 		</header>
 
 		<img class = "banner" src = "./img/Banner.png">
-		<main>
-			<section class="principal">
+		<main> <!-- Corpo principal do codigo -->
+			<section class="principal"> <!-- Essa section foi criada para colocar o conteudo de informações principais da pagina -->
 
 				<h2 class="titulo-principal">Sobre a Clínica</h2>
 
@@ -37,20 +36,20 @@
 
 				<p>Oferecemos profissionais experientes e totalmente qualificados para proporcionar o melhor atendimento. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
 			</section>
-			<section >
+			<section > <!-- Essa section foi criada pra conseguir colocar o mapa -->
 					<h3 class="titulo-principal">Nosso estabelecimento</h3>
-					<p>Nosso estabelecimento está localizado no coração da cidade</p>
+					<p class="Centralizar-texto">Nosso estabelecimento está localizado no coração da cidade</p>
 					<div class="mapa-conteudo">
+						<!-- iframe foi utilizado para conseguir coloca o mapa na pagina -->
 						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.5313729414324!2d-51.919446589242746!3d-23.441289878794436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e81a413a9c9463%3A0x4e3ee356ad1bd6c3!2sUniCesumar%20-%20Maring%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1713029293077!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">></iframe>
 					</div>	
 			</section>
 
-			<section class="beneficios">
+			<section class="beneficios"> <!-- Essa section foi criada para exibir a lista de benefícios -->
 				<h3  class="titulo-principal">Benefícios</h3>
-
-				<div class="conteudo-beneficios">
+				<div class="conteudo-beneficios"> <!-- Essa div foi criada só para estilizar -->
 					<ul class="lista-beneficios">
-						<li class= "itens">Atendimento ao Cliente</li>
+						<li class= "itens">Atendimento ao Cliente</li> <!-- Por ser lista o HTML coloca um ponto para diferenciar -->
 						<li class= "itens">Custo Benefício</li>
 						<li class= "itens">Localização</li>
 						<li class= "itens">Profissionais Qualificados</li>
@@ -62,10 +61,11 @@
 		</section>
 	</main>	
 
-		<footer>
+		<footer> <!-- É utilizado para criar o roda pé da pagina -->
 				<div class="imagem-logo">
 					<img src="./img/logo_Sorriso_Brilhante - Copia.png">
 				</div>
+				<!-- O comando &copy é utilizada para criar o simbolo do copyringht -->
 				<p class="copyright">&copy; 2024 - Clínica Sorriso Brilhante. Todos direitos reservados.</p>	
 		</footer>
 	</body>	

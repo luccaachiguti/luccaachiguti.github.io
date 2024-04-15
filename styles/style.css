@@ -5,6 +5,11 @@ header {
 body {
 	font-family: 'Montserrat', sans-serif;;
 }
+/* EM significa que ele é relativo ao tamanho da fonte e se o usuário tem uma tela grande ou uma tela pequena, ex:dispositivo celular */
+.background-principal {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE,#93aad3);/* Comando utilizado para criar o efeito de degrade */
+}
 
 .caixa {
 	position: relative;
@@ -13,7 +18,7 @@ body {
 	height: 350px;
 	margin-top: -60px;
 }
-
+/* Esse nav foram utilizados para estilizar a parte de navegação entre as paginas */
 nav {
 	position: absolute;
 	top: 110px;
@@ -38,49 +43,7 @@ nav a:hover {
 	text-decoration: underline;
 }
 
-footer {
-	text-align: center;
-	background: linear-gradient(#93aad3,#FEFEFE);
-	padding: 40px 0;
-}
-.imagem-logo{
-	padding-right: 120px;
-	padding-top: 10px;
-	margin-top: 50px;
-}
-
-.copyright {
-	color: #000000;
-	font-size: 13px;
-	margin: -50px 0 0;
-}
-
-main {
-
-}
-
-form {
-	margin: 40px 0;
-}
-
-form label, form legend {
-	display:block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
-
-.input-padrao {
-	display: block;
-	margin: 0 0 20px;
-	padding: 10px 25px;
-	width: 50%;
-}
-
-.checkbox {
-	margin: 20px 0;
-}
-
-.enviar {
+.botaoAgendar {
 	width:40%;
 	padding: 20px 20px;
 	background: rgb(47, 44, 227);
@@ -93,27 +56,10 @@ form label, form legend {
 	cursor: pointer;
 }
 
-.enviar:hover {
+.botaoAgendar:hover {
 	background: rgb(97, 164, 231);
 	transform: scale(1.2);
 }
-
-table {
-	margin: 20px 0 40px;
-}
-
-thead {
-	background: #555555;
-	color: white;
-	font-weight: bold;
-}
-
-td, th {
-	border: 1px solid #000000;
-	padding: 8px 15px;
-}
-
-/*css para página inicial*/
 
 .banner{
 	height: 550px;
@@ -141,27 +87,12 @@ td, th {
 	font-weight: bold;
 }
 
-.principal em {
-	font-style: italic;
-}
-
-.utensilios{
-	width: 120px;
-	float: left;
-	margin: 0 20px 20px 0; 
-}
-
-.background-principal {
-	padding: 3em 0;
-	background: linear-gradient(#FEFEFE,#93aad3);
-}
-
 .mapa-conteudo{
 	width: 940px;
 	margin: 0 auto;
 }
 
-.background-principal p {
+.Centralizar-texto{
 	margin: 0 0 2em;
 	text-align: center;
 }
@@ -196,20 +127,23 @@ td, th {
     transition: 400ms;
 }
 
-@media screen and (max-width: 480px) {
-	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
-        width: auto;
-    }
-
-    h1 {
-        text-align: center;
-    }
-
-    nav {
-        position: static;
-    }
-
-    .lista-beneficios, .imagem-beneficios {
-        width: 100%;
-    }
+/* Aqui e para estiliza o roda pé */
+footer {
+	text-align: center;
+	background: linear-gradient(#93aad3,#FEFEFE);/* Comando utilizado para criar o efeito de degrade */
+	padding: 40px 0;
 }
+
+.imagem-logo{
+	padding-right: 120px;
+	padding-top: 10px;
+	margin-top: 50px;
+}
+
+.copyright {
+	color: #000000;
+	font-size: 13px;
+	margin: -50px 0 0;
+}
+
+

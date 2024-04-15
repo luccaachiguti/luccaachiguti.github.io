@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>>Clínica Sorriso Brilhante</title>
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+		<link rel= "stylesheet" href="./styles/agendamento.css">
+		<script src="./js/script.js"></script>
+	</head>
+
+
+	<body>
+		<header>
+			<div class="caixa"> <!-- Essa div é a caixa que armazena o logito e o botão -->
+				<h1><img src="./img/logo_Sorriso_Brilhante - Copia.png"></h1>
+
+				<nav> <!-- Essa tag representa o botâo que leva para a outra pagina de agendar consulta -->
+					<ul>
+						<li><a href="index.html" class="bataoPInicial">Pagina  inicial</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+
+		<main>
+			<h1>Agendar consulta</h1>
+				<form><!-- Utiliza para criar o formularia de informações necessarias -->
+						<label for="nome">Nome</label> <!-- Nome do campo que sera preenchido --> 
+						<input type="text" id="nome" class="input-padrao" required placeholder="nome"> <!-- Input é onde o usuario pode digitar as informações -->
+
+						<label for="email">Email</label>
+						<input type="email" id="email" class="input-padrao" required placeholder="email@dominio.com">
+
+						<label for="telefone">Telefone</label>
+						<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+						<label for="cpf">CPF</label>
+						<input id="cpf" class="input-padrao" required placeholder="000.000.000-00">
+
+						<fieldset> <!-- É utilizado para agrupar elementos, dentro de uma caixa -->
+							<legend>Como prefere nosso contato?</legend> <!-- Legend é um rotulo que é utilizado quando usamos a tag fieldset -->
+							<label for="radio-email"><input type="radio" name="contato" value="E-mail" id="radio-email"> Email</label>
+
+							<label for="radio-ligacao"><input type="radio" name="contato" value="Ligação" id="radio-ligacao"> Ligação</label>
+							
+							<label for="radio-whatsapp"><input type="radio" name="contato" value="Whatsapp" id="radio-whatsapp" checked> Whatsapp</label>	
+						</fieldset>
+
+						<fieldset>
+							<legend>Qual horário prefere ser atendido?</legend>
+							<select id="horario"> <!--  Representa um controle que apresenta um menu de opções -->
+								<option value="8:00">8:00</option> <!-- São as opções dentro do menu -->
+								<option value="8:30">8:30</option>
+								<option value="9:00">9:00</option>
+								<option value="9:30">9:30</option>
+								<option value="10:00">10:00</option>
+								<option value="10:30">10:30</option>
+								<option value="11:00">11:00</option>
+								<option value="11:30">11:30</option>
+							</select>
+						</fieldset>
+						<div class="espaçamento">
+							<a type="button" id="enviar" class="enviar"> Confirmar</a>
+						</div>
+				</form>
+		</main>
+
+		<table class="tabela"> <!-- Table é utilizado para criação de tabelas -->
+			<thead> <!--Thead é primeira linha da tabela -->
+				<tr> <!-- Tr é a tag para definir oque é linha da tabela -->
+					<th>Nome</th> <!-- Th é o item da tabela -->
+					<th>Email</th>
+					<th>Telefone</th>
+					<th>CPF</th>
+					<th>Forma de contato</th>
+					<th>Horario</th>
+				</tr>
+			</thead>
+			<tbody id="agendamentos"> <!-- Tbody é o corpo da tabela -->
+			</tbody>
+		</table>
+
+
+		<footer> <!-- É utilizado para criar o roda pé da pagina -->
+			<div class="imagem-logo">
+				<img src="./img/logo_Sorriso_Brilhante - Copia.png">
+			</div>
+			<!-- O comando &copy é utilizada para criar o simbolo do copyringht -->
+			<p class="copyright">&copy; 2024 - Clínica Sorriso Brilhante. Todos direitos reservados.</p>	
+		</footer>
+	</body>
+
+</html>	
